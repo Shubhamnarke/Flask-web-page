@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block head %}
+    <title>Front page</title>
+{% endblock %}
+
+{% block body %}
+ <br>
+    <br>
+
+    <h1>Create new Blog Post : </h1>
+    <br>
+
+
+    <form action="/home"  method="post">
+
+        <label for="title">Title :</label>
+    <input class="form-control"  title="text"  name="title" id="title" placeholder="Title">
+
+        <br>
+
+
+        <label for="content">Content :</label>
+        <textarea class="form-control" title="text" name="content" id="content" rows="3" placeholder="Enter the content"></textarea>
+
+        <br>
+
+        <label for="content">Author :</label>
+        <input  class="form-control"  title="text"  name="author" id="author" placeholder="Author">
+
+        <br>
+
+        <input class="btn btn-success" type="submit" value="Post">
+
+    </form>
+    <hr>
+
+
+{% endblock %}
